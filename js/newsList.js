@@ -4,7 +4,7 @@ fetch('https://news24-7-api.herokuapp.com/api/news/news-feed')
         console.log(response)
         const newsList = document.querySelector('.newsList');
         response.data.news.forEach(newsListNews => newsList.insertAdjacentHTML('beforeend', `
-        <a href='http://127.0.0.1:5501/post.html?id=${newsListNews.id}'>
+        <a href='https://armnews24-7.herokuapp.com/post.html?id=${newsListNews.id}'>
             <div class='newsListNews'>
                 <img class='newsListImage'src='${newsListNews.image}'
                 alt='${newsListNews.imageAlt}' width='90' height='70' >
@@ -17,7 +17,7 @@ fetch('https://news24-7-api.herokuapp.com/api/news/news-feed')
     `));
 
     //     location.pathname === '/post.html' && document.querySelector('main').insertAdjacentHTML('beforeend', response.data.news.map(readMoreNews => `
-    //     <a href='http://127.0.0.1:5501/post.html?id=${readMoreNews.id}'>
+    //     <a href='https://armnews24-7.herokuapp.com/post.html?id=${readMoreNews.id}'>
     //         <div class='newsListNews'>
     //             <img class='newsListImage'src='${readMoreNews.image}'
     //             alt='${readMoreNews.imageAlt}' width='90' height='70' >

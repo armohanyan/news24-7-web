@@ -13,6 +13,6 @@ const getTokenCookie = () => {
     return '';
 };
 
-addEventListener('DOMContentLoaded', () => !getTokenCookie() && location.replace('http://127.0.0.1:5501/login.html'));
+addEventListener('DOMContentLoaded', () => !getTokenCookie() && location.replace('https://armnews24-7.herokuapp.com/login.html'));
 
 export default getTokenCookie;

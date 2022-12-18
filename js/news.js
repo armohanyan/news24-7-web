@@ -24,11 +24,11 @@ const getNews = () => {
                         ${category === 'տեսանյութեր' ? categoryPost.iframe : `<img class='newsImage' src='${categoryPost.image ?? ''}'
                         alt='${categoryPost.imageAlt ?? ''}' />`}
                         <div class='newsDescription'>
-                            <a class='authorOfPostWrapper' href='http://127.0.0.1:5501/ post.html?id=${categoryPost.id}'>
+                            <a class='authorOfPostWrapper' href='https://armnews24-7.herokuapp.com/ post.html?id=${categoryPost.id}'>
                                 <img src='${categoryPost.icon}' alt='${categoryPost.author?.author}' width='15' />
                                 <span class='authorOfPost'>${categoryPost.author?.author}</span>
                             </a>
-                            <a class='newsTitle' href='http://127.0.0.1:5501/post.html?id=${categoryPost.id}'>${categoryPost.title}</a>
+                            <a class='newsTitle' href='https://armnews24-7.herokuapp.com/post.html?id=${categoryPost.id}'>${categoryPost.title}</a>
                             <div class='newsDateWrapper'>
                                 <img src='/images/calendarIcon.png' alt='calendar icon' width='15'>
                                 <time class='date'>${categoryPost.createdAt}</time>

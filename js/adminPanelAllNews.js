@@ -8,11 +8,11 @@ fetch(`https://news24-7-api.herokuapp.com/api/news`)
             `<tr class='post'>
                 <td class='titleCell'>
                     <strong class='titleStrongWrapper'>
-                        <a class='title' href='http://127.0.0.1:5501/postEditor.html?id=${news.id}'>${news.title}</a>
+                        <a class='title' href='https://armnews24-7.herokuapp.com/postEditor.html?id=${news.id}'>${news.title}</a>
                     </strong>
                     <img class='dropdownIcon' src='./images/arrow-down-sign-to-navigate.png' />
                     <div class='editAndDelete'>
-                        <a href='http://127.0.0.1:5501/postEditor.html?id=${news.id}' class='edit'>Խմբագրել</a> |
+                        <a href='https://armnews24-7.herokuapp.com/postEditor.html?id=${news.id}' class='edit'>Խմբագրել</a> |
                         <button class='delete' data-id='${news.id}'>Աղբաման ուղարկել</button>
                     </div>
                 </td>

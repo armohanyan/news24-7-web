@@ -9,14 +9,14 @@ const getFilteredMostReadNews = (apiParameters) => {
                 const news = mostReadNewsItem.news;
                 return `
                 <div class='mostReadNews'>
-                    <a href='http://127.0.0.1:5501/post.html?id=${news.id}'>
+                    <a href='https://armnews24-7.herokuapp.com/post.html?id=${news.id}'>
                         <img class='mostReadNewsImage' src='${news.image}' alt='${news.imageAlt ?? ''}' height='85' width='85'>
                     </a>
                     <div class='mostReadNewsRightBlock'>
-                        <a class='mostReadNewsTitle' href='http://127.0.0.1:5501/post.html?id=${news.id}'>${news.title}</a>
+                        <a class='mostReadNewsTitle' href='https://armnews24-7.herokuapp.com/post.html?id=${news.id}'>${news.title}</a>
                         <div class='postAuthorAndViewCount'>
                             <div class='postAuthorWrapper'>
-                                <a class='postAuthor' href='http://127.0.0.1:5501/post.html?id=${news.id}>
+                                <a class='postAuthor' href='https://armnews24-7.herokuapp.com/post.html?id=${news.id}>
                                 <img src='${news.icon}' alt='${news.newsAuthorIconAlt}' width='18'>
                                 ${news.author?.name ?? 'Լրագրող'}
                                 </a>

@@ -102,7 +102,7 @@ const fetchPost = (method, postId) => {
         body: formData
     }).then(() => {
         localStorage.setItem(`icon`, icon);
-        location.replace('http://127.0.0.1:5501/adminPanelAllNews.html');
+        location.replace('https://armnews24-7.herokuapp.com/adminPanelAllNews.html');
     }).then(res => console.log(res))
 }
 

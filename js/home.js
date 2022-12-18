@@ -25,7 +25,7 @@ fetch(`https://news24-7-api.herokuapp.com/api/news/?category=գլխավոր&page
         const news = response.data.news;
         console.log(news);
         document.querySelector('#topNews').insertAdjacentHTML('afterbegin', `
-            <a class='topNewsLinkWrapper' href='http://127.0.0.1:5501/post.html?id=${news[0].id}'>
+            <a class='topNewsLinkWrapper' href='https://armnews24-7.herokuapp.com/post.html?id=${news[0].id}'>
                 <img class='topNewsImage' src='${news[0].image}' alt='${news[0].imageAlt ?? ''}'>
                 <p class='topNewsTitle'>${news[0].title}</p>
             </a>
@@ -34,7 +34,7 @@ fetch(`https://news24-7-api.herokuapp.com/api/news/?category=գլխավոր&page
         news.slice(1).forEach(mainNews => {
             document.querySelector('.mainNewsItems').insertAdjacentHTML('afterbegin', `
             <div class='mainNewsItem'>
-                <a href='http://127.0.0.1:5501/post.html?id=${mainNews.id}'>${mainNews.title}</a>
+                <a href='https://armnews24-7.herokuapp.com/post.html?id=${mainNews.id}'>${mainNews.title}</a>
             </div>`);
         });
     })
