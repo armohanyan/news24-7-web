@@ -1,0 +1,213 @@
+header {
+    max-width: 1260px;
+    margin: 0 auto;
+    font-family: "pragmatica_book", Tahoma, Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 17px;
+}
+
+.newsListhamburgerWrapper {
+    display: none;
+}
+
+#logo {
+    width: 247px;
+    height: 90px;
+}
+
+.dateWrapper {
+    margin-top: 30px;
+    font-size: 18px;
+    max-width: 105px;
+}
+
+.weekday {
+    color: #B4B4B4;
+}
+
+.exchangeRates {
+    display: flex;
+    margin-top: 30px;
+}
+
+.exchangeRates div {
+    margin-right: 15px;
+}
+
+.currency {
+    color: #B4B4B4;
+}
+
+.weatherSocialNetworks {
+    margin-top: 30px;
+    color: #666666;
+}
+
+.weather {
+    display: flex;
+}
+
+.weatherIcon {
+    margin-top: -20px;
+}
+
+.hamburgerNav {
+    display: none;
+}
+
+@media only screen and (max-width: 1280px) {
+    header {
+        position: fixed;
+        max-width: unset;
+        z-index: 5;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 5px 0 0 rgb(0 0 0 / 10%);
+        border-bottom: unset;
+    }
+
+    .hamburgerActiveHeader {
+        z-index: 2;
+    }
+
+    .info {
+        height: 40px;
+        padding: 10px 0px 10px 0px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .hamburgerActiveHeader .info {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .newsListhamburgerWrapper {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        max-width: 146.05px;
+        z-index: 999;
+        align-items: center;
+        justify-content: center;
+        background-color: #E90606;
+        color: #fff;
+        font-size: 18px;
+        font-family: 'Pragmatica Bold', arial;
+        font-weight: 700;
+    }
+
+    .activeNewsListHamburgerWrapper {
+        justify-content: flex-start;
+        max-width: 300px;
+        background-color: white;
+        box-shadow: unset !important;
+    }
+
+    .activeNewsListHamburgerWrapper .hamburgerNewsListTitle {
+        color: red;
+    }
+
+    .activeNewsListHamburgerWrapper .newsListHamburger {
+        margin-left: 20px;
+    }
+
+    .newsListhamburgerWrapper {
+        height: 60px;
+    }
+
+    .newsListHamburger {
+        width: 30px;
+        margin-right: 15px;
+    }
+
+    #logo {
+        width: 166px;
+        height: 40px;
+        margin-left: 166px;
+    }
+
+    .dateWrapper {
+        margin-top: 0;
+    }
+
+    .hamburgerActiveHeader .weekday {
+        color: black;
+    }
+
+    .logo {
+        margin-left: 160px;
+        font-size: 47px;
+    }
+
+    .dateWrapper {
+        position: absolute;
+        right: 80px;
+        max-width: fit-content;
+    }
+
+    .exchangeRates {
+        display: none;
+    }
+
+    .weatherSocialNetworks {
+        display: none;
+    }
+
+    .hamburgerNav {
+        display: block;
+        position: fixed;
+        z-index: 1000;
+        padding: 17px 15px 17px 15px;
+        right: 0;
+        width: 30px;
+        border-left: 1px solid #cdcdcd;
+    }
+
+    .hamburgerActiveHeader .hamburgerNav {
+        border-left: 0.5px solid black;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .dateWrapper {
+        max-width: 78px;
+    }
+
+    .weekday {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .dateWrapper {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .newsListhamburgerWrapper {
+        max-width: 60px;
+    }
+
+    .activeNewsListHamburgerWrapper {
+        max-width: 300px;
+    }
+
+    .newsListHamburger {
+        margin: 0;
+    }
+
+    .hamburgerNewsListTitle {
+        display: none;
+    }
+
+    #logo {
+        margin-left: 70px;
+    }
+}

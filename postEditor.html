@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang='hy'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='description' content='Ավելացնել նոր գրառում'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='./css/postEditor.css'>
+    <link rel='stylesheet' href='./css/addPostButton.css'>
+    <link rel='stylesheet' href='./css/style.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src='https://kit.fontawesome.com/456a3d6943.js' crossorigin='anonymous'></script>
+    <title>Ավելացնել նոր գրառում</title>
+</head>
+
+<body>
+    <nav>
+        <a id='addNewPost' href='http://127.0.0.1:5501/postEditor.html'>Ավելացնել նորը</a>
+        <a id='allPosts' href='http://127.0.0.1:5501/adminPanelAllNews.html'>Բոլոր գրառումները</a>
+    </nav>
+    <h1 id='addNewPostTitle'>Ավելացնել գրառում</h1>
+    <form class='adminPanelForm'>
+        <main>
+            <input name='title' type='text' placeholder='Ավելացնել գրառում' id='addTitleInput'>
+            <div id='makePostContent'>
+                <div id='textEditor'>
+                    <select id='textType'>
+                        <option value='' disabled>Հատված</option>
+                        <option value='h1'>
+                            H1
+                        </option>
+                        <option value='h2'>
+                            H2
+                        </option>
+                        <option value='h3'>
+                            H3
+                        </option>
+                        <option value='h4'>
+                            H4
+                        </option>
+                        <option value='h5'>
+                            H5
+                        </option>
+                        <option value='h6'>
+                            H6
+                        </option>
+                    </select>
+                    <button type='button' data-element='b'>
+                        <i class='fa fa-bold'></i>
+                    </button>
+                    <button type='button' data-element='i'>
+                        <i class='fa fa-italic'></i>
+                    </button>
+                    <button type='button' data-element='ul'>
+                        <i class='fa-solid fa-list'></i>
+                    </button type='button'>
+                    <button type='button' data-element='ol'>
+                        <i class='fa-solid fa-list-ol'></i>
+                    </button>
+                    <button type='button' data-element='q'>
+                        <i class='fa fa-quote-left'></i>
+                    </button>
+                    <button data-element='p'>
+                        <i class='fa fa-align-left'></i>
+                    </button>
+                    <button type='button' data-element='p'>
+                        <i class='fa fa-align-center'></i>
+                    </button>
+                    <button type='button' data-element='p'>
+                        <i class='fa fa-align-right' data-element='b'></i>
+                    </button>
+                    <button type='button' data-element='a'>
+                        <i class='fa-solid fa-link'></i>
+                    </button>
+                </div>
+                <div id='postContent' contenteditable='true'>
+                    <p class='postParagraph'></p>
+                </div>
+            </div>
+            <input type='text' id='addIframe' placeholder='Ավելացնել iframe' name='iframe'>
+        </main>
+        <aside>
+            <div id='submitPostWrapper'>
+                <input type='submit' id='submitPost' value='Հրապարակել'>
+            </div>
+            <div class='categoriesWrapper'>
+                <p>Կատեգորիաներ</p>
+                <div class='categories'>
+                    <label>
+                        <input class='categoryCheckbox' name='categories' type='checkbox' value='քաղաքականություն' />
+                        Քաղաքականություն
+                    </label>
+                    <label>
+                        <input class='categoryCheckbox' name='categories' type='checkbox' value='շոու-բիզնես' />
+                        Շոու-բիզնես
+                    </label>
+                    <label>
+                        <input class='categoryCheckbox' name='categories' type='checkbox' value='տեսանյութեր' />
+                        Տեսանյութեր
+                    </label>
+                    <label>
+                        <input class='categoryCheckbox' name='categories' type='checkbox' value='հասարակություն' />
+                        Հասարակություն
+                    </label>
+                    <label>
+                        <input class='categoryCheckbox' name='categories' type='checkbox' value='հարցազրույցներ' />
+                        Հարցազրույցներ
+                    </label>
+                    <label>
+                        <input class='categoryCheckbox' name='categories' type='checkbox' value='սպորտ' />
+                        Սպորտ
+                    </label>
+                    <label>
+                        <input class='categoryCheckbox' name='categories' type='checkbox' value='facebook' />
+                        Facebook
+                    </label>
+                    <label>
+                        <input class='categoryCheckbox' name='categories' type='checkbox' value='լրահոս' />
+                        Լրահոս
+                    </label>
+                    <label>
+                        <input class='categoryCheckbox' name='categories' type='checkbox' value='գլխավոր' />
+                        Գլխավոր նորություններ
+                    </label>
+                </div>
+            </div>
+            <div id='authorFullNameAndIcon'>
+                <p>Հեղինակ և icon</p>
+                <label id='author'>
+                    Հեղինակ
+                    <input id='addAuthor' type='text' name='author' placeholder='Հեղինակ'>
+                </label>
+                <label>
+                    Հեղինակի icon
+                    <select name='icon' id='selectAuthorIcon'>
+                        <option selected disabled hidden>Ընտրել icon</option>
+                        <option value='https://cdn-icons-png.flaticon.com/512/124/124010.png'>Facebook</option>
+                        <option
+                            value='https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png'>
+                            Youtube</option>
+                        <option value='https://blognews.am/static/soc/24/blognews.png'>BlogNews</option>
+                        <option value='http://upload.wikimedia.org/wikipedia/commons/d/d4/Armenian_news_-_NEWS.am.png'>
+                            News.am</option>
+                        <option value='https://www.freeiconspng.com/thumbs/video-icon/video-icon-1.png'>Video</option>
+                    </select>
+                    <input id='iconInput' type='text' placeholder='Գրել icon-ի src-ն'>
+                </label>
+            </div>
+            <div class='postImageAndAltWrapper'>
+                <div id='postImageWrapper'>
+                    <label id='postImageLabel' for='choosePostImage'>Գրառման նկար</label>
+                    <input id='choosePostImage' name='image' type='file' accept='image/*'>
+                </div>
+                <label id='imageAltWrapper'>
+                    Նկարի alt
+                    <input name='imageAlt' class='imageAltInput' type='text' placeholder='Նկարի alt'>
+                </label>
+            </div>
+        </aside>
+    </form>
+    <!-- <script src='./js/getTokenCookie.js' type='module'></script> -->
+    <script src='./js/postEditor.js' type='module'></script>
+    <script src='./js/getTokenCookie.js' type='module'></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='hy'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='description' content='Գրառումներ'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='./css/adminPanelAllNews.css'>
+    <link rel='stylesheet' href='./css/addPostButton.css'>
+    <link rel='stylesheet' href='./css/style.css'>
+    <title>Գրառումներ</title>
+</head>
+
+<body >
+    <main>
+        <div id='postsTitleAndAddNew'>
+            <h1>Գրառումներ</h1>
+            <a id='addNewPost' href='http://127.0.0.1:5501/postEditor.html'>Ավելացնել նորը</a>
+        </div>
+        <form>
+            <table>
+                <thead>
+                    <tr>
+                        <th id='titleColumn'>Վերնագիր</th>
+                        <th>Հեղինակ</th>
+                        <th>Կարգեր</th>
+                        <th id='dateColumn'>Ամսաթիվ</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </form>
+    </main>
+    <script src='./js/adminPanelAllNews.js' type='module'></script>
+    <script src='./js/getTokenCookie.js' type='module'></script>
+</body>
+
+</html>

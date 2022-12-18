@@ -1,0 +1,17 @@
+#addNewPost {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    width: fit-content;
+    background: #f7f7f7;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 4px 8px;
+    color: #0073AA;
+}
+
+#addNewPost:hover {
+    border-color: #008ec2;
+    background: #00a0d2;
+    color: #fff;
+}

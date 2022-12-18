@@ -1,0 +1,159 @@
+@import './header.css';
+@import './nav.css';
+@import './newsList.css';
+@import './footer.css';
+
+body {
+    font-family: "pragmatica_book", Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.contentWrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+main {
+    margin-top: 30px;
+    max-width: 620px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.aboutPost {
+    color: #cdcdcd;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px solid #e90606;
+}
+
+.aboutPost a {
+    text-decoration: underline;
+    color: #cdcdcd;
+}
+
+.aboutPost a:hover {
+    text-decoration: none;
+}
+
+.postPageSocialNetworks {
+    margin-top: 18px;
+    height: 25px;
+}
+
+.postPageSocialNetworks img {
+    width: 20px;
+    height: 20px;
+}
+
+.postPageSocialNetworks img:hover {
+    transition: 0.5s;
+    transform: translate(0, -5px);
+}
+
+.post {
+    margin-top: 17px;
+}
+
+.postImage {
+    width: 100%;
+}
+
+.theMost {
+    padding: 17px 20px 14px;
+    font-size: 24px;
+    line-height: 30px;
+    color: #2b2b2b;
+    font-family: "bodoni_bold";
+}
+
+.newsFilter {
+    background-color: #dde4e8;
+}
+
+.theMostFilterItem {
+    color: #e90606;
+}
+
+.theMostFilterItem:hover {
+    color: black;
+}
+
+.theMostFilterItemActive {
+    color: white;
+    background-color: #4b4b4b;
+}
+
+.readAlsoTitleWrapper {
+    display: flex;
+    position: relative;
+    margin: 20px 0px 25px;
+}
+
+.readAlsoTitle {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.showMoreWrapper {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+
+.showMore {
+    color: #e90606;
+    font-size: 12px;
+    font-family: "pragmatica_book", Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.readMoreIcon {
+    margin-left: 5px;
+    padding: 5px;
+    width: 5px;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 1280px) {
+    .contentWrapper {
+        max-width: 940px;
+        margin: 61px auto 0;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    main {
+        margin: 20px auto 0;
+        max-width: 620px;
+    }
+
+    aside {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    main {
+        padding: 0px 10px;
+    }
+
+    .post {
+        margin-top: 22px;
+    }
+
+    .postText {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    h1 {
+        font-size: 24px;
+    }
+}

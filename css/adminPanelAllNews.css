@@ -1,0 +1,106 @@
+body {
+    background: #f1f1f1;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+main {
+    margin: 15px 20px 0px;
+}
+
+#postsTitleAndAddNew {
+    display: flex;
+}
+
+h1 {
+    font-size: 23px;
+    font-weight: 400;
+}
+
+#titleColumn, #dateColumn, .title, .edit, .author, .category, .addNewPost {
+    color: #0073AA;
+    cursor: pointer;
+}
+
+#titleColumn:hover, #dateColumn:hover, .title:hover, .edit:hover, .author:hover, .category:hover, .addNewPost:hover {
+    color: #00a0d2;
+}
+
+table {
+    margin-top: 15px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 4%);
+}
+
+thead, .post:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+th, td {
+    padding: 10px 8px;
+}
+
+th {
+    text-align: left;
+    min-width: 120px;
+}
+
+td {
+    vertical-align: baseline;
+}
+
+.titleCell {
+    width: 30%;
+}
+
+.title {
+    font-size: 14px;
+}
+
+.dropdownIcon {
+    display: none;
+}
+
+.editAndDelete {
+    margin-top: 7px;
+    font-size: 13px;
+    opacity: 0;
+}
+
+.post:hover .editAndDelete {
+    opacity: 1;
+}
+
+.delete {
+    color: #a00;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.delete:hover {
+    color: #dc3232;
+}
+
+.author, .category {
+    width: 15%
+}
+
+.date {
+    width: 10%;
+}
+
+@media only screen and (max-width: 777px) {
+    table {
+        margin: 0px 10px;
+    }
+
+    .dropdownCells {
+        display: none;
+    }
+
+    .dropdownIcon {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+}

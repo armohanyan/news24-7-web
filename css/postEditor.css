@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f1f1;
+    margin: 0px 20px;
+}
+
+nav {
+    margin: 20px 0px 5px;
+}
+
+#allPosts {
+    color: #0073AA;
+}
+
+.adminPanelForm input[type='text'], .adminPanelForm textarea {
+    outline: none;
+    width: 100%;
+}
+
+.adminPanelForm {
+    display: flex;
+    margin-top: 14px;
+}
+
+main {
+    width: 83.3%;
+    margin-right: 20px;
+}
+
+label {
+    font-weight: 600;
+}
+
+#addTitleInput {
+    box-sizing: border-box;
+    padding: 3px 8px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .07);
+    font-size: 1.7em;
+}
+
+#makePostContent {
+    margin: 25px 0px;
+}
+
+#textEditor {
+    border: 1px solid #ddd;
+    background: #f5f5f5;
+    padding: 7px 5px;
+}
+
+#textType {
+    font-size: 13px;
+    line-height: 20px;
+    padding: 2px 20px 2px 9px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 1px 1px -1px rgb(0 0 0 / 20%);
+    outline: 0;
+    color: #595959;
+}
+
+#textType:hover {
+    border-color: #b4b9be;
+}
+
+#textEditor button {
+    padding: 4px 5px;
+    border-color: transparent;
+}
+
+#textEditor button:hover {
+    border-color: #555d66;
+    color: #23282d;
+    box-shadow: inset 0 1px 0 #fff, 0 1px 0 rgb(0 0 0 / 8%);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#postContent {
+    width: 100%;
+    min-height: 300px;
+    overflow: auto;
+    border: 1px solid #c5c5c5;
+    background-color: white;
+    outline: none;
+}
+
+#insertLinkWrapper {
+    display: flex;
+    align-items: center;
+    background-color: #F5F5F5;
+    max-width: 367px;
+    height: 40px;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+#insertLinkWrapper input[type='text'], aside input[type='text'], #addIframe {
+    padding: 5px;
+}
+
+#linkInput {
+    width: 91.5205479452%;
+}
+
+#insertLink {
+    padding: 0px 7.5px;
+    background: #0085ba;
+    border-color: #0073aa #006799 #006799;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left: 2px;
+}
+
+#submitStyleTagIcon {
+    width: 10px;
+    height: 30px;
+}
+
+aside {
+    width: 280px;
+}
+
+aside>div {
+    background-color: white;
+}
+
+aside input[type='text'] {
+    margin-top: 10px;
+}
+
+#submitPostWrapper {
+    position: relative;
+    padding: 19.2px 10px;
+    border-top: 1px solid #ddd;
+    background: #f5f5f5;
+}
+
+#submitPost {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    padding: 6px 14px;
+    font-size: 14px;
+    background-color: #0085BA;
+    border: none;
+    color: white;
+    border-radius: 3px;
+}
+
+.categoriesWrapper {
+    margin: 20px 0px;
+    padding: 8px 14.4px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 4%);
+}
+
+.categoriesWrapper label {
+    display: block;
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+.categoryCheckbox {
+    height: 16px;
+    vertical-align: middle;
+    width: 16px;
+    border-color: #b4b9be;
+    cursor: pointer;
+    box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
+    transition: .05s border-color ease-in-out;
+}
+
+#authorFullNameAndIcon {
+    padding: 8px 12px;
+}
+
+#author, #author input {
+    display: block;
+}
+
+#author {
+    margin: 10px 0px;
+}
+
+#selectAuthorIcon {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    padding: 5px;
+}
+
+.postImageAndAltWrapper {
+    display: block;
+    margin-top: 20px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 4%);
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: white;
+}
+
+#postImageWrapper img {
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+#choosePostImage {
+    margin-top: 10px;
+}
+
+#imageAltWrapper {
+    display: block;
+    margin-top: 8px;
+}
+
+.imageAltInput {
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 850px) {
+    body {
+        margin: 0px 10px;
+    }
+
+    .adminPanelForm {
+        flex-direction: column;
+        margin-top: 9px;
+    }
+
+    main, aside {
+        width: 100%;
+    }
+
+    main {
+        margin-right: 0;
+    }
+
+    aside {
+        margin-top: 20px;
+    }
+}

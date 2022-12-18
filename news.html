@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang='hy'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='./css/style.css'>
+    <link rel='stylesheet' href='./css/news.css'>
+    <link rel='stylesheet' href='./css/header.css'>
+    <link rel='stylesheet' href='./css/nav.css'>
+    <link rel='stylesheet' href='./css/mostReadNews.css'>
+    <link rel='stylesheet' href='./css/moreButton.css'>
+    <title>category - news website</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class='info'>
+            <img src='./images/newsWebsiteLogo.png' id='logo' alt='logo'/>
+            <div class='dateWrapper'>
+                <span class='weekday'></span>
+                <span class='month'></span>
+                <span class='day'></span>
+            </div>
+            <div class='exchangeRates'>
+                <div>
+                    <p class='currency'>USD</p>
+                    <p class='rate USDRate'></p>
+                </div>
+                <div>
+                    <p class='currency'>EUR</p>
+                    <p class='rate EURRate'></p>
+                </div>
+                <div>
+                    <p class='currency'>RUB</p>
+                    <p class='rate RUBRate'></p>
+                </div>
+            </div>
+            <div class='weatherSocialNetworks'>
+                <div class='weather'>
+                    <p class='weatherIndicator cityWeather'></p>
+                    <img class='weatherIcon' />
+                    <p class='weatherIndicator degreeCelsius'></p>
+                </div>
+                <div class='socialIcons'>
+                </div>
+            </div>
+            <img class='hamburgerNav' src='./images/Hamburgers/HamburgerBlackIcon.png'
+                onclick='hamburgerToggle("nav", ".hamburgerNav", "../images/Hamburgers/RedHamburgerIcon.png", "../images/Hamburgers/HamburgerBlackIcon.png")'
+                alt='Hamburger toggle for navigation bar.' />
+        </div>
+    </header>
+    <!-- navbar -->
+    <nav>
+        <div class='navContentWrapper'>
+            <form class='searchWrapper'>
+                <input class='search' type='search' name='search' placeholder='Որոնում' />
+                <input type='image' class='searchSubmit' src='./images/searchSubmitIcon.png' alt='search submit'>
+            </form>
+            <div class='navExchangeRates'>
+                <div>
+                    <p class='currency'>USD</p>
+                    <p class='rate USDRate'></p>
+                </div>
+                <div>
+                    <p class='currency'>EUR</p>
+                    <p class='rate EURRate'></p>
+                </div>
+                <div>
+                    <p class='currency'>RUB</p>
+                    <p class='rate RUBRate'></p>
+                </div>
+            </div>
+            <div class='weatherAndNavItems'>
+                <div class='weatherSocialNetworks navWeatherSocialNetworks'>
+                    <div class='weather'>
+                        <p class='weatherIndicator cityWeather'></p>
+                        <img class='weatherIcon' />
+                        <p class='weatherIndicator degreeCelsius'></p>
+                    </div>
+                    <div class='socialIcons'></div>
+                </div>
+                <div class='navItems'>
+                    <a class='navItem' href='news.html?category=Քաղաքականություն'>Քաղաքականություն</a>
+                    <a class='navItem' href='news.html?category=Հասարակություն'>Հասարակություն</a>
+                    <a class='navItem' href='news.html?category=Շոու-Բիզնես'>Շոու-բիզնես</a>
+                    <a class='navItem' href='news.html?category=Հարցազրույցներ'>Հարցազրույցներ</a>
+                    <a class='navItem' href='news.html?category=Սպորտ'>Սպորտ</a>
+                    <a class='navItem' href='news.html?category=Facebook'>Facebook</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class='contentWrapper'>
+        <!-- main -->
+        <main></main>
+        <!-- most read news -->
+        <aside id='mostRead'>
+            <div class='mostReadFilter'>
+                <span class='mostReadTitle'>Ամենաընթերցվածը</span>
+                <div class='mostReadDateFilter'>
+                    <button class='dateFilter active'>օր</button>
+                    <button class='dateFilter'>շաբաթ</button>
+                    <button class='dateFilter'>ամիս</button>
+                </div>
+            </div>
+            <div id='mostReadNewsScrollBar'></div>
+        </aside>
+    </div>
+    <script src='./js/news.js'></script>
+    <script src='./js/header.js'></script>
+    <script type='module' src='./js/mostReadNews.js'></script>
+    <script src='./js/search.js'></script>
+</body>
+
+</html>

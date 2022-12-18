@@ -1,0 +1,118 @@
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-box-shadow: 0 5px 0 0 rgb(0 0 0 / 10%);
+    box-shadow: 0 5px 5px rgb(31 31 31 / 20%);
+}
+
+.navContentWrapper {
+    width: 100%;
+    position: relative;
+    max-width: 1260px;
+}
+
+.navWeatherSocialNetworks {
+    display: none;
+}
+
+.navExchangeRates {
+    display: none;
+}
+
+.navItems {
+    padding: 14.5px 0px 14.5px 0px;
+}
+
+nav a {
+    color: black;
+    font-family: 'pragmatica_book', Tahoma, Arial, Helvetica, sans-serif;
+    margin-right: 36px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.searchWrapper {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    right: 0;
+}
+
+.search {
+    width: 100%;
+    font-size: 16px;
+    padding: 15px 0px 15px 20px;
+    border: none;
+    outline: none;
+    background-color: #F8F8F899;
+}
+
+.searchSubmit {
+    position: absolute;
+    right: 10px;
+    width: 27px;
+}
+
+@media only screen and (max-width: 1280px) {
+    nav {
+        position: fixed !important;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        top: 0;
+        right: 0;
+        max-width: 260px;
+        overflow: auto;
+        background-color: white;
+        box-shadow: 0 0 0 5px rgb(0 0 0 / 10%);
+    }
+
+    .searchWrapper {
+        position: relative;
+        margin-top: 60px;
+        right: 0;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .navExchangeRates {
+        display: flex;
+        justify-content: center;
+        margin: 26px auto 0;
+    }
+
+    .navExchangeRates div {
+        margin-right: 15px;
+    }
+
+    .navExchangeRates div:last-child {
+        margin-right: 0;
+    }
+
+    .weatherAndNavItems {
+        padding: 20px;
+    }
+
+    .navWeatherSocialNetworks {
+        display: flex;
+    }
+
+    .navItems {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navItems .navItem {
+        margin-bottom: 25px;
+    }
+
+    /* .navWeatherSocialNetworks {
+        display:none;
+    } */
+}
